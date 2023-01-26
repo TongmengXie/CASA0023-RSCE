@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Initial",
+    "section": "",
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n2"
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "2  Introduction",
+    "section": "",
+    "text": "See Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "Week1.html",
+    "href": "Week1.html",
+    "title": "3  Week 1",
+    "section": "",
+    "text": "Passive data: Energy usually in eletcromagnetic form e.g., human eyes\nActive data: Energy in addition in illumination . e.g., radar.\nHow EM waves interact with Earth’s surface and atmosphere: Reflection, scattering, absorption\nsingle\ndual\nquad\n\n\nRaster: file\ntypes: BIL, BSQM BIP, GeoTIFF\n\n\n\nSpatial: ranging from10 cm to several kilos\nSpectral: How many different spectral bands are there? (Every feature on earth has a unique spectral signature)\n(Atmospheric windows: )\n(Vegetation: red edge -- infra bands. APP: look at the infra band s of city to identify who has access to vegetation)\nRadiometric resolution: resolution of cell’s value\nTemporal resolution: ussualy inversly relate3 to pixel size (spatial)\nMODIS"
+  },
+  {
+    "objectID": "Week1.html#application-just-state-what-interest-you-and-why-as-well-as-the-application.-application-context-matters.-why-useful-what-had-it-assisted-achieving.-mind-map-of-concepts-to-show-understanding-of-data-and-workflow",
+    "href": "Week1.html#application-just-state-what-interest-you-and-why-as-well-as-the-application.-application-context-matters.-why-useful-what-had-it-assisted-achieving.-mind-map-of-concepts-to-show-understanding-of-data-and-workflow",
+    "title": "3  Week 1",
+    "section": "3.2 Application: just state what interest you and why, as well as the application. Application: Context matters. Why useful? What had it assisted achieving. Mind map of concepts, to show understanding of data and workflow",
+    "text": "3.2 Application: just state what interest you and why, as well as the application. Application: Context matters. Why useful? What had it assisted achieving. Mind map of concepts, to show understanding of data and workflow\n“Spectral Feature Space, Vegetation On Bands B04 and B08”\n{fig-align=“center”}\nOne of the applications really attracted me was the spatial signature of vegetation on the terra, as we could assign features to each end of the spatial signature area see Figure 3.1, such as bare land on the right end of the triangle-like area where red light captured are dense while near-infrared level is low. Heavy vegetation are witnessed at the upper end of the triangle-like area where red light low and near-infrared is high, indicating heavy biomass. As for the left-down corner where both red and near-infrared are low, we can identify wet lands. This is integrated in the NDVI (Normalized Difference Vegetation Index) to estimate vegetation cover.\n\n\n\nFigure 3.1: Spectral Feature Space, Vegetation On Bands B04 and B08\n\n\nSpatial signatures can also be used to monitor the health of vegetation by identifying patterns of quavariation in spectral reflectance that are indicative of stress or disease. For example, vegetation that is stressed or diseased may have a different spectral reflectance signature than healthy vegetation, which can be identified using spatial signatures.\nIn addition, spatial signatures can be used to monitor the growth and distribution of vegetation over time by comparing satellite imagery from different dates. This can be useful for understanding the impacts of land use changes, climate change, and other factors on vegetation.\nOverall, spatial signatures are a powerful tool for vegetation monitoring, as they can be used to identify and classify different types of vegetation, monitor vegetation health, and track vegetation changes over time."
+  },
+  {
+    "objectID": "Week1.html#reflection",
+    "href": "Week1.html#reflection",
+    "title": "3  Week 1",
+    "section": "3.3 Reflection",
+    "text": "3.3 Reflection\nOne of the challenges I encountered is to navigate the complexties of the interface of SNAP and QGIS. It becomes clear to me that yes implementing several functions in code can be challenging, but a software with collective functions as a whole can be mindblowing even when with decent GUIs. Specifically, finding which function falling under which menu consumes a lot of time, and figuring out filling parameters to carry the analysis also took some efforts of iterative validation.\nWhen doing the operation in R on a script level, it becomes confusing where I put the data"
+  },
+  {
+    "objectID": "Week3.html",
+    "href": "Week3.html",
+    "title": "4  Week 3",
+    "section": "",
+    "text": "[Better together: Integrating and fusing multispectral and radar satellite imagery to inform biodiversity monitoring, ecological research and conservation science - Schulte to Bühne - 2018 - Methods in Ecology and Evolution - Wiley Online Library](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.12942)\n\n\n\nSatellite remote sensing (SRS) can be derived from Multispectral sensors and radar sensors. \n\n\n\n- Multispectral sensors are passive, merely receiving electromagnetic waves reflected from surface, usually used to reflect chemical properties (such as nitrogen or carbon content and moisture). Usually produces data with comparatively low spatial resolution\n\n- Radar ones emit electromagnetic radiation and measure the returning signal, responding to the three-dimensional structure of objects, being sensitive to their orientation, volume and surface roughness. Usually produces data with comparatively high spatial resolution\n\n\n\nImage fusion: \n\n\n\n1. **decision-level** (SRS integration), where separate predictors are used to estimate a parameter of interest. \n\n2. **object-level (feature-level).** unit: multi-pixel objects. (1) using radar and multispectral imagery is input into an object-based image segmentation algorithm, or (2) segmenting each type of imagery separately before combining them. multi-pixel objects\n\n3. **pixel-level (Observation-level)**, where pixel values are combined to derive a fused image with new pixel values, either in the spatial or the temporal domain.\n\n\n\n(2. and 3. derive entirely new predictors.)\n\n\n\n![Schematic overview of multispectral-radar SRS data fusion techniques. The parameter of interest can be a categorical variable, like land cover, or a continuous variable, like species richness. In pixel-level fusion, the original pixel values of radar and multispectral imagery are combined to yield new, derived pixel values. Object-based fusion refers to (1) using radar and multispectral imagery is input into an object-based image segmentation algorithm, or (2) segmenting each type of imagery separately before combining them. Finally, decision-level fusion corresponds to the process of quantitatively combining multispectral and radar imagery to derive the parameter of interest (by e.g. combining them in a regression model, or classification algorithm)](Better%20together%20Integrating%20and%20fusing%20multispectr%207b55b0d54b6f4991ad28fe74cc6e81c9/Untitled.png)\n\n\n\nSchematic overview of multispectral-radar SRS data fusion techniques. The parameter of interest can be a categorical variable, like land cover, or a continuous variable, like species richness. In pixel-level fusion, the original pixel values of radar and multispectral imagery are combined to yield new, derived pixel values. Object-based fusion refers to (1) using radar and multispectral imagery is input into an object-based image segmentation algorithm, or (2) segmenting each type of imagery separately before combining them. Finally, decision-level fusion corresponds to the process of quantitatively combining multispectral and radar imagery to derive the parameter of interest (by e.g. combining them in a regression model, or classification algorithm)\n\n\n\nImplementation approach\n\n\n\n![Untitled](Better%20together%20Integrating%20and%20fusing%20multispectr%207b55b0d54b6f4991ad28fe74cc6e81c9/Untitled%201.png)\n\n\n\n*pixel-level*\n\n\n\n\n*Component substitution techniques*: such as principal component analysis (PCA), Intensity-hue-saturation (IHS). \n\n\n    \n\n    PCA is the only pixel-level image fusion technique that cannot be applied to imagery with different spatial resolutions, and the only that allows unlimited image numbers.\n\n    \n\n    IHS fusion. Three images with lower spatial resolution (typically multispectral data) are integrated with a single image with high spatial resolution (typically radar) to retain the radiometry but increase the spatial resolution of the former. Facilitate visual interpretation by combining resulting images into a single RGB image.\n\n    \n\n\n*Multi-resolution analysis,* such as **Wavelet transformation. Decompose multispectral and radar imagery into their respective low- and high-frequency components\n\n*Arithmetic fusion techniques:* such as the Brovey transform algorithm. Unlikely to be appropriate for multispectral-radar SRS image fusion.\n\n\n\n\nO*bject-level:* Based on brightness and intensity values of each pixel, as well as its spatial context, objects such as lines, shapes or textures are extracted.\n\n\n\n1. ***image segmentation:*** Demands that multispectral and radar SRS images are with the same spatial resolution\n\n2. *extracting objects separately and combining in a feature map*\n\n\n\nObject-based fusion reduces all multispectral and radar information into a single layer of discrete objects, which are often relatively easy to relate to ecological features.\n\n\n\n*Decision-level fusion: Q*uantitative decision-making frameworks—such as a regression, a quantitative model or a classification algorithm."
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "5  Summary",
+    "section": "",
+    "text": "1 + 1\n\n2"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  }
+]
