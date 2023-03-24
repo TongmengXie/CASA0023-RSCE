@@ -166,7 +166,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Week4.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week4 - Policy Case Study in</span></a>
+  <a href="./Week4.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week4 - Policy Case Study in New York City</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -225,6 +225,7 @@ div.csl-indent {
   <li><a href="#wetland-classification" id="toc-wetland-classification" class="nav-link" data-scroll-target="#wetland-classification"><span class="toc-section-number">9.2.1</span>  Wetland classification</a></li>
   <li><a href="#future-advancement" id="toc-future-advancement" class="nav-link" data-scroll-target="#future-advancement"><span class="toc-section-number">9.2.2</span>  Future Advancement</a></li>
   </ul></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="toc-section-number">9.3</span>  Reflection</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/TongmengXie/CASA0023-RSCE/issues/new" class="toc-action">Report an issue</a></p><p><a href="https://github.com/TongmengXie/CASA0023-RSCE/edit/main/Week9.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
     </div>
@@ -304,9 +305,9 @@ div.csl-indent {
 <p>The relationship between different surfaces and their sensitivity to polarizations in SAR data</p>
 <table class="table">
 <colgroup>
-<col style="width: 20%">
-<col style="width: 22%">
-<col style="width: 56%">
+<col style="width: 23%">
+<col style="width: 23%">
+<col style="width: 52%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -397,9 +398,9 @@ div.csl-indent {
 </ul>
 <table class="table">
 <colgroup>
-<col style="width: 14%">
-<col style="width: 48%">
-<col style="width: 37%">
+<col style="width: 21%">
+<col style="width: 43%">
+<col style="width: 34%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -473,6 +474,28 @@ div.csl-indent {
 <li>The effectiveness of machine learning algorithms for automated wetland classification can expect further development. E.g., Graph-based Change Detection Algorithms can model complex spatial relationships between features and is robust against noise and speckle effects in SAR data.</li>
 </ul>
 <p>This shift toward the automated machine learning algorithms comes to fulfill the requirement for operational wetland monitoring systems.</p>
+</section>
+</section>
+<section id="reflection" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">9.3</span> Reflection</h2>
+<p>SAR data with its amazing all-weather capability and real-time monitoring feature heralds the possibilities of real-time monitoring, which aligns with the disaster monitoring tasks. But there remain concerns in this approach:</p>
+<ul>
+<li>How real-time is real time?
+<ul>
+<li>Does a 5-seconds delay in data transmission fail an essential decision-making?</li>
+</ul></li>
+<li>How to quantify tolerance thresholds in regards of delay, error and bias?
+<ul>
+<li>A sharp cutoff or a fuzzy one?</li>
+</ul></li>
+<li>What degree of accuracy? Managing response time of
+<ul>
+<li>Data acquirement, transmission and calculation</li>
+<li>Human-based decision-making</li>
+</ul>
+Incurs extra cost. The estimation is almost always NOT deterministic.</li>
+</ul>
+<p>Thinking about these questions can prepare one for awareness of risks when applying seemingly fancy technologies to real-world problems where people lives are concerned and efficiency of the solution needs elaborate calculation.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
@@ -486,7 +509,6 @@ Dubeau, Pierre, Douglas J. King, Dikaso Gojamme Unbushe, and Lisa-Maria Rebelo. 
 Millard, Koreen, and Murray Richardson. 2013. <span>“Wetland Mapping with <span>LiDAR</span> Derivatives, <span>SAR</span> Polarimetric Decompositions, and <span>LiDAR</span>–<span>SAR</span> Fusion Using a Random Forest Classifier.”</span> <em>Canadian Journal of Remote Sensing</em> 39 (4): 290–307. <a href="https://doi.org/10.5589/m13-038">https://doi.org/10.5589/m13-038</a>.
 </div>
 </div>
-</section>
 </section>
 
 </main> <!-- /main -->
